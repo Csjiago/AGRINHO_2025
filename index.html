@@ -4,20 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link:rel= "stylesheet" href="style.css"> </link:rel>
-<title> Projeto Agrinho </title>
+<<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Agrinho</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Centraliza o texto padrão */
+        }
+        .header-top {
+            background-color: black;
+            color: white;
+            padding: 10px; /* Reduzi o padding para um tamanho menor */
+            text-align: center;
+            font-size: 1em; /* Defini um tamanho de fonte menor */
+            position: absolute; /* Permite posicionar precisamente */
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10; /* Garante que fique acima das imagens */
+        }
+        .image-container {
+            display: flex;
+            flex-direction: column; /* Coloca os elementos em coluna */
+            align-items: center; /* Centraliza os itens horizontalmente */
+            margin-top: 40px; /* Espaço para não sobrepor o cabeçalho */
+        }
+        .main-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px; /* Espaço entre a primeira imagem e o texto */
+        }
+        .center-text {
+            font-size: 1.2em;
+            margin-bottom: 20px; /* Espaço entre o texto e a segunda imagem */
+        }
+    </style>
 </head>
- <body>
-  <div> <img src="img/inicio.png" class="mb-3" style="float: right;" width="500" > </div>
-  <div> <img src="img/inicio2.png" class="mb-3" style="float: left;" width="600"> </div>
+<body>
 
-<header style="background-color: black; color: white; padding: 20px; text-align: center;">
-    <h1>Projeto Agrinho</h1>
-</header>
-  <h>Comemorando
-    a ligação entre
-    o campo e a cidade</h1> 
-  </body>
+    <div class="header-top">
+        Projeto Agrinho
+    </div>
 
+    <div class="image-container">
+        <img src="sua-imagem-da-cidade.jpg" alt="Imagem da Cidade" class="main-image">
+        <p class="center-text">Comemorando a ligação entre o campo e a cidade</p>
+        <img src="sua-imagem-do-campo.jpg" alt="Imagem do Campo" class="main-image">
+    </div>
+
+</body>
+</html>
 <body>
     <div> <img src="img/conexao.png" class="mb-3"  width="200"> </div>
   <h1>A conexão entre o campo e a cidade:
