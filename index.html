@@ -3,31 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Projeto Agrinho</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Centers block elements if they have a defined width, and also inline content */
+        }
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .intro-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Pushes images to the ends and centers the text */
+            padding: 20px;
+            max-width: 1200px; /* Limit width for better readability */
+            margin: 0 auto; /* Center the container */
+        }
+        .intro-section img {
+            max-width: 45%; /* Adjust image size relative to the container */
+            height: auto;
+        }
+        .intro-section h1 {
+            text-align: center;
+            flex-grow: 1; /* Allows the h1 to take up available space */
+            margin: 0 20px; /* Add some margin around the text */
+        }
+        .content-block {
+            padding: 20px;
+            max-width: 800px; /* Limit width for content blocks */
+            margin: 20px auto; /* Center content blocks with some spacing */
+        }
+        .content-block img {
+            display: block; /* Make image a block element to center it */
+            margin: 0 auto; /* Center the image */
+            margin-bottom: 20px; /* Space below the image */
+        }
+        h1 {
+            font-size: 2em; /* Adjust heading sizes as needed */
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.5; /* Improve readability */
+        }
+        .small-text {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.5;
+        }
+    </style>
 </head>
 <body>
 
-    <header style="background-color: black; color: white; padding: 20px; text-align: center;">
+    <header>
         <h1>Projeto Agrinho</h1>
     </header>
 
-    <div> <img src="img/inicio.png" class="mb-3" style="float: right;" width="500"> </div>
-    <div> <img src="img/inicio2.png" class="mb-3" style="float: left;" width="600"> </div>
+    <div class="intro-section">
+        <img src="img/inicio2.png" alt="Campo" style="width: 600px;">
+        <h1>Comemorando a ligação entre o campo e a cidade</h1>
+        <img src="img/inicio.png" alt="Cidade" style="width: 500px;">
+    </div>
 
-    <h1>Comemorando a ligação entre o campo e a cidade</h1>
+    ---
 
-    <div> <img src="img/conexao.png" class="mb-3" width="200"> </div>
-    <h1>A conexão entre o campo e a cidade: Reflexões sobre a Realidade Brasileira</h1>
-    <h6>No Brasil, a conexão entre o rural e o urbano é complicada e com muitos lados...</h6>
+    <div class="content-block">
+        <img src="img/conexao.png" alt="Conexão Campo-Cidade" style="width: 200px;">
+        <h1>A conexão entre o campo e a cidade: Reflexões sobre a Realidade Brasileira</h1>
+        <h3>No Brasil, a conexão entre o rural e o urbano é complicada e com muitos lados...</h3>
+    </div>
 
-    <div> <img src="img/frutas.png" class="mb-3" width="200"> </div>
-    <h1>O campo produz, a cidade consome. Frutas e verduras mais compradas no mercado.</h1>
-    <h6>No período de 2020 a 2024, o Brasil manteve-se como um dos principais produtores e consumidores globais de frutas e vegetais...</h6>
+    ---
 
-    <div> <img src="img/festa.png" class="mb-3" width="200"> </div>
-    <h1>Festas rurais mais influentes nos últimos anos</h1>
-    <h6>Pequeno texto abaixo...</h6>
+    <div class="content-block">
+        <img src="img/frutas.png" alt="Frutas e Verduras" style="width: 200px;">
+        <h1>O campo produz, a cidade consome. Frutas e verduras mais compradas no mercado.</h1>
+        <h3>No período de 2020 a 2024, o Brasil manteve-se como um dos principais produtores e consumidores globais de frutas e vegetais...</h3>
+    </div>
+
+    ---
+
+    <div class="content-block">
+        <img src="img/festa.png" alt="Festas Rurais" style="width: 350px;">
+        <h1>Festas rurais mais influentes nos últimos anos</h1>
+        <h3 class="small-text">Pequeno texto abaixo...</h3>
+    </div>
 
 </body>
 </html>
