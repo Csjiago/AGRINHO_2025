@@ -23,10 +23,15 @@ header h1 {
     max-width: 1200px;
     margin: 0 auto;
 }
-.intro-section img {
-    max-width: 45%;
-    height: auto;
+
+.campo {
+    width: 400;
 }
+
+.cidade {
+    width: 400;
+}
+
 .intro-section figure {
     text-align: center;
 }
